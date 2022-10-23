@@ -1,0 +1,43 @@
+doctype html
+html
+    include ./head.pug
+    link(rel='stylesheet' href='CSS/chat.css' type='text/css')
+    body
+    include ./header.pug
+    |  <h2>Чат:</h2>
+    |     <div class="chatMessages">
+    |       <ul id="messages">
+    each mes in messages
+        |           <div style="margin-bottom: 10px;">
+        |             <div style="display: flex; font-size: 20px;">
+        p(style="margin:0;" id="p_user") #{mes.author}
+        p(style="margin: 0 0 0 10px; color: grey;" id="p_date") #{mes.date}
+        |             </div>
+        |             <div style="font-size:18px">
+        p(style="margin:0.5% 0 0; color:#00ff00;" id="p_message") #{mes.message}
+        |             </div>
+        |           </div>
+    |       </ul>
+    |     </div>
+
+    |     <div class="chatInput center">
+    |       <input class = "input_form" type="text" placeholder="Напишите сообщение..." id="message" required>
+    |       <input class = "input_buttom" type="submit" value="Send" id="chat_btn" class="del" onclick="handleSubmitNewMessage()">
+
+
+    |     </div>
+
+    |  <template id="message-container">
+    |   <div style="margin-bottom: 10px;">
+    |     <div style="display: flex; font-size: 20px;">
+    |       <p style="margin:0;" id="p_user"></p>
+    |       <p style="margin: 0 0 0 10px; color: grey;" id="p_date"></p>
+    |     </div>
+    |     <div style="font-size:18px">
+    |       <p style="margin:2% 3%" id="p_message"></p>
+    |     </div>
+    |   </div>
+    | </template>
+    script(src='https://cdn.socket.io/4.3.2/socket.io.min.js' integrity='sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs' crossorigin='anonymous')
+    script(src='JS/chat.js')
+    include ./footer.pug

@@ -1,0 +1,67 @@
+doctype html
+html
+    include ./head.pug
+    link(rel='stylesheet' href='CSS/form.css' type='text/css')
+    script(src='JS/Form2.js')
+    include ./header.pug
+    body
+    main.b-page__line
+        .form_event
+            .left_column
+                form#line-web.line-web
+                    .line-flex
+                        .web-row
+                            // <label class="my-label" for="name">Имя:</label>
+                            input#name.input_form_p(required='' type='text' name='Имя' placeholder='Введите имя...')
+                        .web-row
+                            // <label class="my-label" for="task">Задача:</label>
+                            input#task.input_form_p(required='' type='text' name='Задача' placeholder='Введите задачу...')
+                        .web-row
+                            // <label class="my-label">Дедлайн:</label>
+                            input.input_form_p(required='' type='date' name='Дедлайн' placeholder='Введите дату дедлайна...')
+                    .web-row
+                        button#add-btn.-button.shine-button(type='submit') Добавить
+                        button#clear-btn.-button.shine-button(type='button') Очистить
+            .table-responsive
+                template#main-todo-table
+                table#-table
+                    thead
+                        tr
+                            th Имя
+                            th Задача
+                            th Дедлайн
+                            th
+                    tbody#paragraph_table
+                        //
+                          <tr>
+                          <td>Для всех</td>
+                          <td>Сбор в воскресенье (задача не выполнима)</td>
+                          <td>2021-12-26</td>
+                          <td><button type="button" class="-button delete_button shine-button">Закрыть</button></td>
+                          </tr>
+                        tr.todo_list
+                            td
+                            td
+                            td
+                            td.disabled
+                            td
+                                button.-button.delete_button.shine-button(type='button') Закрыть
+                            //
+                              <template id ="main-todo-table_v1">
+                              <td><button type="button" class="-button condition shine-button">Не выполнено</button>
+                              <button type="button" class="-button delete_button">x</button> </td>
+                              </template>
+                              <template id ="main-todo-table_v2">
+                              <td>  <button type="button" class="-button condition shine-button">Выполнено</button>
+                              <button type="button" class="-button delete_button">x</button></td>
+                              </template>
+        .event__article
+            h3.heading Ближайшее событие:
+            p
+                | Встреча участников ИТМО "Панчлайн"
+                strong 26 ноября
+            a(href='https://vk.com/itmopunchline' target='_blank') Подробнее...
+
+    include ./footer.pug
+    script(src='JS/AnimScroll.js')
+    script(src='JS/ActiveMenu.js')

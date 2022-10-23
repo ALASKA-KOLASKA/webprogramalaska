@@ -1,0 +1,29 @@
+div(class="b-page__line-header")
+    nav(class="b-page__head-line")
+        ul(class="b-menu")
+            li(class = "menu__item ")
+                a(class = "menu__link floating-button", href="/") Главная страница
+            li(class = "menu__item")
+                a(class = "menu__link floating-button", href="cards") Карты
+            li(class = "menu__item")
+                a(class = "menu__link floating-button", href="Galerie") Галерея
+            li(class = "menu__item")
+                a(class = "menu__link floating-button", href="list_members?take=10&skip=0") List Members
+            li(class = "menu__item")
+                a(class = "menu__link floating-button", href="chat") Чат на сокетах
+            if user != null
+                li(class = "menu__item")
+                    a(class = "menu__link floating-button", href="/") User: #{user.username}
+                li(class = "menu__item")
+                    a(class = "menu__link floating-button", href="logout") Logout
+            else
+                li(class = "menu__item")
+                    a(class = "menu__link floating-button", href="login") Login
+                li(class = "menu__item")
+                    a(class = "menu__link floating-button", href="register") Register
+
+.b-page__line-black
+    .blockquote__section
+        blockquote
+            p.anim-items Я понял, что думаю о тебе, и стал вспоминать, сколько времени ты в моих мыслях. Потом понял: с тех пор как я встретил тебя, ты никогда их не покидала.
+            cite.cite__blockquote.anim-items Неизвестный

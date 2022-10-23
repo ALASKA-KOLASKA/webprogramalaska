@@ -1,0 +1,563 @@
+body{
+    margin: 0;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.b-page_d{
+    background-color: black;
+}
+    .b-page__line-header_d{
+    background-color: black;
+}
+
+.b-page {
+    font-family: Arial, serif;
+    width:100%;
+    margin:0;
+    min-width: 778px;
+
+
+}
+
+
+.b-page__head-line{
+    width:100%;
+
+}
+.b-page__line-black{
+    background: black;
+    color: white;
+    /*box-shadow: 0px 0px 15px 5px #000;*/
+}
+
+.b-page__line{
+
+    margin: 100px 30px 250px;
+    background: black;
+    color: white;
+
+}
+
+.b-page__line_black{
+    margin: 100px 30px 250px;
+    background: black;
+    color: white;
+}
+
+
+.b-page__footer{
+    background-color: black;
+    background-size: 100%;
+    color: white;
+    border-top: white 2px solid;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-family: "Arial Black", serif;
+    font-weight: bold;
+    font-stretch: semi-condensed;
+}
+.heading_centre{
+    text-align: center;
+}
+
+.b-page__line-header{
+    height:700px;
+    background:black url("https://phonoteka.org/uploads/posts/2021-04/1618745673_10-phonoteka_org-p-gorodskoi-fon-dlya-fotoshopa-10.jpg") no-repeat 100% 0;
+    background-size: cover;
+    box-shadow: 0px 0px 15px 5px #000;
+}
+
+.b-page__line-header_update{
+    background: black;
+}
+
+.b-head__heading{
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 13% 7%;
+
+}
+
+.heading__header{
+    font-family: 'Cormorant', serif;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    font-size:3rem;
+    padding: 1% 0;
+    box-shadow: 0px 0px 10px 5px #000;
+}
+
+
+.b-head__form{
+    float: right;
+
+}
+
+
+
+.form__header {
+    background: transparent;
+    position: relative;
+    width: 200px;
+}
+.input__form, .button__form {
+    outline: none;
+    background: transparent;
+}
+.input__form {
+    width: 96%;
+    height: 42px;
+    border: 2px solid white;
+}
+.button__form {
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.b-menu
+{
+    border-top: 1px solid white;
+    background-color: black;
+    position: fixed;
+    margin:0;
+    padding:0.7% 0;
+    height:40px;
+    list-style:none;
+    width:100%;
+    display:table;
+    table-layout: auto;
+    z-index: 1000;
+    min-width: 778px;
+
+}
+
+.b-menu-no{
+    position: static;
+}
+
+.menu__item
+{
+    text-align:center;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+    height:32px;
+    background-color: black;
+    line-height:30px;
+    display: table-cell;
+    padding-bottom: 0%;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.menu__link{
+    color: white;
+
+}
+
+
+
+
+
+.floating-button {
+    display: inline-block;
+    min-width: 170px;
+    line-height: 45px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+
+.floating-button:hover {
+    box-shadow: 0 2px 0 white;
+    color: white;
+
+}
+
+
+
+
+
+.link__social{
+    color: white;
+}
+
+.menu__item_active
+{
+    color: red;
+    background-color: black;
+
+}
+
+
+.b-page__line-first{
+    width: 100%;
+}
+
+@media  (min-width: 992px){
+    .b-section {
+        float: left;
+        width: 70%;
+    }
+
+    .b-article {
+        margin-left: 70%;
+
+    }
+}
+
+.event__article{
+    text-align: center;
+    padding: 2%;
+    margin: 4%;
+}
+
+
+
+.blockquote__section{
+    text-align:center;
+    border-bottom: 1px inset white;
+    padding-top: 3%;
+    padding-bottom: 8%;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.cite__blockquote{
+    text-align:right;
+}
+
+blockquote{
+    font-size: 24px;
+}
+
+.img__team{
+    border: 1px solid #000000;
+}
+
+
+.figcaption__team{
+    font-style: italic;
+    position: center;
+    padding-top: 4%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.team__section{
+    margin: 15% 50% 30% ;
+}
+
+.anim-items{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: 3s;
+
+}
+
+
+._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
+._noActive{
+    opacity: 0;
+    transition:0s;
+}
+
+.figure__team-1{
+    grid-area: figure__team-1
+
+}
+
+.figure__team-2{
+    grid-area: figure__team-2
+
+}
+
+.figure__team-3{
+    grid-area: figure__team-3
+
+}
+
+.figure__team-4{
+    grid-area: figure__team-4
+
+}
+
+.figure__team-5{
+    grid-area: figure__team-5
+
+}
+.figure__team-6{
+    grid-area: figure__team-6
+
+}
+
+/*
+
+@media (min-width: 724px) and (max-width: 1083px){
+    .container {
+        display: grid;
+        gap: 50px;
+        height: 30%;
+        grid-template-areas: "heading heading"
+                            "figure__team-1 figure__team-2"
+                            "figure__team-3 figure__team-4"
+                            "figure__team-5 figure__team-6";
+        grid-template-rows: 50px repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+
+@media (orientation: landscape) and (min-width: 1084px) {
+    .container {
+        display: grid;
+        gap: 50px;
+        height: 800px;
+        grid-template-areas: "heading heading heading"
+                            "figure__team-1 figure__team-2 figure__team-3"
+                            "figure__team-4 figure__team-5 figure__team-6";
+        grid-template-rows: 50px repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+
+
+        align-content: center;
+    }
+}*/
+
+
+.heading_team{
+    margin: 3% 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: 7% 1% 10%;
+}
+
+
+.float_clear{
+    clear:both
+}
+
+
+
+
+@media (min-width: 748px) {
+    .footer_logo {
+        float: right;
+    }
+
+    .social__footer {
+        padding: 50px;
+        float: left;
+    }
+
+    table{
+        white-space: nowrap;
+
+    }
+}
+
+.text__social{
+    font-style: italic;
+}
+
+.link__social{
+    cursor: pointer;
+}
+
+
+
+.table{
+    display:grid;
+    height: 300px;
+    grid-template-rows: auto;
+    grid-template-columns: subgrid;
+    margin: 1% 0;
+
+}
+
+.line{
+   
+    justify-self: stretch;
+}
+
+
+.line:nth-child(even){
+    background-color: #F9F0DA;
+    grid-template-columns: repeat(3, 1fr );
+}
+
+
+
+/*
+.line, .line_first, .line_last{
+    display:grid;
+
+    grid-template-columns: 35% repeat(2, 1fr);
+    border-bottom: 1px solid #000000;
+    padding: 1.5% 0;
+
+}
+
+ */
+
+/*
+
+.line_first{
+    background-color: #F9F0DA;
+}
+
+*/
+
+.column_table{
+    text-align: center;
+
+}
+
+.column_table_b{
+    font-weight: bold;
+}
+
+.first_column_table{
+    padding-left: 7%;
+    font-weight: bold;
+}
+
+
+@media  (min-width: 320px) and (max-width: 767px) {
+    .wrapper, .b-page {
+        overflow: scroll;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+    .b-page {
+        font-size: 3.5rem;
+    }
+    .heading{
+        font-size: 4rem;
+    }
+
+
+    .menu__item
+    {
+        text-align:center;
+        font-size: 1.6rem;
+        height:60px;
+        display: block;
+        line-height:70px;
+
+    }
+    .text__social{
+        font-style: italic;
+        font-size: 4rem;
+    }
+
+    .figcaption__team{
+        font-size: 4rem;
+
+    }
+
+    .b-page__line-header{
+        background:black
+    }
+    .b-header{
+        padding: 12%;
+        height:680px;
+        background:black url(../images/back2.jpg) no-repeat 100% 65%;
+        background-size: 100%;
+        box-shadow: 0px 0px 15px 5px #000;
+    }
+    .b-head__heading{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15%;
+    }
+    .heading__header {
+        font-size: 4.5rem;
+    }
+
+
+
+
+
+    .input__form {
+        height: 30px;
+        border: none;
+    }
+    .button__form {
+        border: none;
+        height: 30px;
+
+    }
+
+    .b-head__form{
+        float: none;
+        margin-left: 40%;
+        margin-right: 50%;
+
+    }
+
+    .container {
+        grid-template-rows: 150px repeat(4, 1fr);
+    }
+
+    .b-page__line{
+
+        margin: 100px 20px 5px;
+    }
+
+    .link__social{
+        font-size: 2.8rem;
+    }
+    .text__social{
+        font-size: 2.8rem;
+    }
+    .footer_logo{
+        margin: 0;
+    }
+    figcaption{
+        font-size: 2.8rem;
+    }
+}
+
+.content{
+    margin: 20%;
+}
+
+.block_error{
+    margin-top: 15%;
+}

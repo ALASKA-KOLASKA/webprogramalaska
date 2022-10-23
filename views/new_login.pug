@@ -1,0 +1,47 @@
+doctype html
+html
+    include ./head.pug
+    link(rel='stylesheet' href='CSS/register.css' type='text/css')
+    body
+    div(class="b-page__line-header_update")
+        nav(class="b-page__head-line")
+            ul(class="b-menu")
+                li(class = "menu__item ")
+                    a(class = "menu__link floating-button", href="/") Главная страница
+                li(class = "menu__item")
+                    a(class = "menu__link floating-button", href="video") Задачи
+                li(class = "menu__item")
+                    a(class = "menu__link floating-button", href="cards") Карты
+                li(class = "menu__item")
+                    a(class = "menu__link floating-button", href="Galerie") Галерея
+                li(class = "menu__item")
+                    a(class = "menu__link floating-button", href="list_members?take=10&skip=0") List Members
+                li(class = "menu__item")
+                    a(class = "menu__link floating-button", href="chat") Чат на сокетах
+                if user != null
+                    li(class = "menu__item")
+                        a(class = "menu__link floating-button", href="/") User: #{user.username}
+                    li(class = "menu__item")
+                        a(class = "menu__link floating-button", href="logout") Logout
+                else
+                    li(class = "menu__item")
+                        a(class = "menu__link floating-button", href="login") Login
+                    li(class = "menu__item")
+                        a(class = "menu__link floating-button", href="register") Register
+
+    | <h1>Login</h1>
+    | <section class="bg_2">
+    | <div class="constructor center login_container">
+    h2 #{status} : #{description}
+    | <div id="wrapper" class="form_container">
+    |     <form id="signin" action="login" method="post">
+    |         <input type="text" id="user" name="username" id="login_input" placeholder="Login" />
+    |         <input type="password" id="pass" name="password" id="login_input" placeholder="password" />
+    |         <button type="submit" value="Login" id="login_btn" class="del">&#xf0da;</button>
+    |
+    |     </form>
+    | </div>
+    | </div>
+    | </section>
+
+    include ./footer.pug

@@ -1,0 +1,11 @@
+doctype html
+html
+    include ./head.pug
+    include ./header.pug
+    body
+    - var authorized = logged;
+    if authorized === true
+        h2.green Atuhorized
+    else
+        h2.blue Not Authorized
+    include ./footer.pug

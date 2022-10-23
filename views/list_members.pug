@@ -1,0 +1,20 @@
+doctype html
+html
+    include ./head.pug
+    link(rel='stylesheet' href='CSS/members_bd.css' type='text/css')
+    body
+    include ./header.pug
+    main
+        | <h1>Список участников:</h1>
+        | <ul id="template-result" class="">
+        | <template id="member-template">
+        |   <div class="comment list3b">
+        |     <li class="container_lvl2 center">
+        |       <h2 id="member-name"></h2>
+        |
+        |   </li>
+        | </template>
+    a(id="member_prev", class="gradient-button", href="list_members") prev
+    a(id="member_next", class="gradient-button", href="list_members") next
+    include ./footer.pug
+    <script src="JS/members.js"></script>

@@ -1,0 +1,67 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+//  provider = "prisma-generator-nestjs-dto"
+//  output = "../src"
+//  outputToNestJsResourceStructure = "true"
+  provider = "prisma-client-js"
+  output = "../node_modules/.prisma/client"
+}
+
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Member {
+  id          Int           @id @default(autoincrement())
+  name        String        @db.VarChar(25)
+  Performance Performance[]
+  Team        Team[]
+}
+
+model Prop {
+  id          Int           @id @default(autoincrement())
+  name        String
+  price       Float
+  Performance Performance[]
+}
+
+model Performance {
+  id       Int      @id @default(autoincrement())
+  name     String
+  date     DateTime
+  venue    String
+  members  Member[]
+  props    Prop[]
+}
+
+model Team {
+  id        Int      @id @default(autoincrement())
+  name      String
+  captain   Member?  @relation(fields: [captainId], references: [id])
+  captainId Int?
+  instUrl  String
+}
+
+model TeamToMember {
+  teamId Int
+  memberId Int
+  @@id([teamId, memberId])
+}
+
+model User {
+  id      Int      @id @default(autoincrement())
+  email   String   @unique
+  password String
+  username    String  @unique
+}
+
+model Message {
+    id          Int       @id @default(autoincrement())
+    author String
+    message String
+    date DateTime @default(dbgenerated("NOW()"))
+}

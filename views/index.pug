@@ -1,0 +1,39 @@
+doctype html
+html
+    include ./head.pug
+    include ./header.pug
+    body
+    main.b-page__line
+        .b-page__line-first
+            section.b-section
+                .main_text__section
+                    h2.heading.anim-items
+                    blockquote
+                        p.anim-items Все, что я понимаю в жизни, я понимаю только потому, что люблю.
+                        cite.cite__blockquote.anim-items Лев Толстой
+                    blockquote
+                        p.anim-items Ничто не способно заменить великую любовь, которая говорит: «Что бы ни случилось с тобой, тебе всегда есть место за этим столом»
+                        cite.cite__blockquote.anim-items Том Хэнкс
+                    blockquote
+                        p.anim-items Перестаньте смотреть на любовь в глазок, откройте дверь.
+                        cite.cite__blockquote.anim-items Лео Кристофер
+
+
+            .float_clear
+        h2.heading.heading_team Галерея:
+        .container(class='team__section,')
+            figure.figure__team-1(class='figure__team,')
+                img.img__team(src='https://i.pinimg.com/564x/01/3e/35/013e35fa526f0b9a1a5aeb2306d85977.jpg' alt='' width='300' height='300')
+            figure.figure__team-2(class='figure__team,')
+                img.img__team(src='https://i.pinimg.com/564x/00/2e/47/002e47f8af866ec3768f64beefc549f2.jpg' width='300' height='300')
+            figure.figure__team-3(class='figure__team,')
+                img.img__team(src='https://i.pinimg.com/564x/b0/32/40/b0324077c7e06f62066bc062c98c7e97.jpg' width='300' height='300')
+            figure.figure__team-4(class='figure__team,')
+                img.img__team(src='https://i.pinimg.com/564x/89/18/f1/8918f14857b0d2dc463f364eb357dcb6.jpg' width='300' height='300')
+            figure.figure__team-5(class='figure__team,')
+                img.img__team(src='https://i.pinimg.com/564x/f9/54/ad/f954ad5907d44f1a1462230504d4c1e8.jpg' width='300' height='300')
+            figure.figure__team-6(class='figure__team,')
+                img.img__team(src='https://i.pinimg.com/564x/49/ab/49/49ab490c089616fdc433c6f318534ff4.jpg' width='300' height='300')
+
+
+    include ./footer.pug

@@ -1,0 +1,35 @@
+doctype html
+html
+
+    include ./head.pug
+    link(rel='stylesheet' href='CSS/swiper.css' type='text/css')
+    //link(rel='stylesheet' href='CSS/swiper.css' type='text/css')
+    link(href='https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap' rel='stylesheet')
+    script(src='https://unpkg.com/swiper@7/swiper-bundle.min.js')
+    link(rel='stylesheet' href='https://unpkg.com/swiper@7/swiper-bundle.min.css')
+    script(src='JS/Swiper.js')
+    include ./header.pug
+    body
+    main.b-page__line_black
+        .swiper.mySwiper.b-page__line-header_d_swiper
+            .swiper-wrapper
+                .swiper-slide
+                    img.img__team_itemm(src='https://i.pinimg.com/564x/49/ab/49/49ab490c089616fdc433c6f318534ff4.jpg')
+                .swiper-slide
+                    img.img__team_itemm(src='https://i.pinimg.com/564x/c7/24/29/c72429e0342f85942f4465d37d314a80.jpg')
+                .swiper-slide
+                    img.img__team_item(src='https://i.pinimg.com/564x/ee/34/61/ee34613c61ee2d8edcac2811a9dd6407.jpg')
+                .swiper-slide
+                    img.img__team_item(src='https://i.pinimg.com/564x/49/ab/49/49ab490c089616fdc433c6f318534ff4.jpg')
+                .swiper-slide
+                    img.img__team_item(src='https://i.pinimg.com/564x/49/ab/49/49ab490c089616fdc433c6f318534ff4.jpg')
+                .swiper-slide
+                    img.img__team_itemm(src='https://i.pinimg.com/564x/49/ab/49/49ab490c089616fdc433c6f318534ff4.jpg')
+            #swiper-pagination_g.swiper-pagination
+            #button_color_g_prev.swiper-button-prev
+            #button_color_g_next.swiper-button-next
+        script(src='https://cdn.socket.io/4.3.2/socket.io.min.js' integrity='sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs' crossorigin='anonymous')
+        script(src='JS/chat.js')
+    include ./footer.pug
+    script(src='JS/AnimScroll.js')
+    script(src='JS/ActiveMenu.js')

@@ -1,0 +1,39 @@
+html{
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+h2{
+    margin: 4% 0 2%;
+    text-transform: uppercase;
+}
+
+.input_form{
+    background-color: black;
+    color: white;
+    width: 40%;
+    margin-left: 2.5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border-color: white;
+    height: 34px;
+}
+
+.input_buttom{
+    background-color: black;
+    color: white;
+    width: 7%;
+    border-radius: 15px;
+    border-color: white;
+    height: 40px;
+}
+
+.input_buttom:hover{
+    background-color:#00ff00 ;
+    border-color: black;
+    color: black;
+}

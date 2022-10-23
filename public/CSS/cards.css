@@ -1,0 +1,92 @@
+html{
+    background-color: black;
+}
+
+.card_line{
+    background-color: black;
+}
+.card {
+
+    border: 3px ridge white;
+    border-radius: 7px;
+    padding: 2%;
+    max-width: 350px;
+    margin: 1% 1%;
+    text-align: center;
+    color: white;
+}
+
+#cards {
+
+    width: 100%;
+
+}
+
+#add_button {
+
+
+    --x: 50%;
+    --y: 50%;
+
+
+    appearance: none;
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 100px;
+
+
+    border: 3px solid transparent;
+    background: linear-gradient(#000, #000) padding-box, radial-gradient(farthest-corner at var(--x) var(--y), #00C9A7, #845EC2) border-box;
+
+
+    text-align: center;
+
+
+    font-size: 18px
+}
+
+#add_button:hover {
+    color: blueviolet;
+}
+
+#add_button:disabled{
+    color: darkgray;
+}
+
+.disabled {
+    display: none;
+}
+
+
+.container_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    gap: 2%;
+    margin: 7% auto 10%;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

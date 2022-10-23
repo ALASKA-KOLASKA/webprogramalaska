@@ -1,0 +1,11 @@
+doctype html
+html
+    include ./head.pug
+    link(rel='stylesheet' href='CSS/register.css' type='text/css')
+    body
+        section.bg_2
+            h2.headline Error page
+            .constructor.center.login_container
+            h2 #{status} : #{description}
+            a(class = "menu__link floating-button", href="/") Главная страница
+

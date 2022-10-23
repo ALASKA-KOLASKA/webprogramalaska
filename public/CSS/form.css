@@ -1,0 +1,137 @@
+.form_event{
+    margin: 18% 5%;
+
+
+    flex-wrap: wrap;
+    gap: 8.5%;
+    justify-content: center;
+
+}
+
+.table-responsive{
+    display: flex;
+    justify-content: center;
+}
+
+.line-flex{
+    display: flex;
+    gap: 8.5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.web-row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+.table-responsive .left_column {
+
+}
+
+
+.left_column{
+    margin-bottom: 2% ;
+    padding: 2%;
+}
+
+
+
+.active_bottom_{
+    background-color: #d87d56;
+}
+
+
+
+
+table {
+    min-width: 700px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 20px;
+    box-shadow: 0 0 0 10px #F2906B;
+    color: #452F21;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+tr > td:first-child + td {
+    width: 200px
+}
+
+th {
+    padding: 10px 8px;
+    background: white;
+}
+table th:first-child {
+    border-top-left-radius: 20px;
+}
+table th:last-child {
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+td {
+    border-top: 10px solid #F2906B;
+    padding: 8px;
+    background: white;
+}
+table td:first-child {
+    border-bottom-left-radius: 20px;
+}
+table td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+.input_form_p{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 20px;
+
+    overflow: hidden;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fe6637;
+
+
+}
+
+.shine-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 20px;
+
+    overflow: hidden;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fe6637;
+    transition: .2s ease-in-out;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.shine-button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+}
+.shine-button:hover {
+    background: #fe6637;
+    color: #fff;
+}
+.shine-button:hover:before {
+    left: 150px;
+    transition: .5s ease-in-out;
+}
+
+.disabled {
+    display: none;
+}
